@@ -1,0 +1,43 @@
+Html - Hypertext markup language
+
+Hyper text - A text reference to another text
+Markup - a set of rules that defines how content should be displayed on the browser
+
+
+->It is a standard markup language that is used to create structure for web pages
+It contains series of elements that are represented by tags
+
+
+tag
+<resword>content</resword>
+opentag + content + closing tag--->element
+
+
+
+heading tags
+<h1>Primary heading</h1>
+h2
+h3
+h4
+h5
+h6--Smallest heading
+
+html default size-16px
+
+
+paragragh tag
+<p>some description related to page</p>
+
+
+Basic structure of html
+declration
+<!DOCTYPE html>
+root element
+<html>
+head is used to define title,meta information,third party links
+<head>
+<title>day1 webpage</title>
+</head>
+</html>
+
+
