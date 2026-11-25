@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        /*
+        block level elements - it occupies the total space
+        inline elements - it takes neccesary space
+        inline_block - it behaves like a inline but take properties like block level
+        */
+
+        /* div{ 
+            background: darkred;
+            padding: 20px;
+            width: 25%;
+            margin: 20px;
+        }
+
+        span{
+            background: beige;
+            padding: 20px;
+            display: inline-block;
+
+            width: 80px;
+            height: 200px;
+            margin: 20px;
+        } */
+        
+        .parent{
+            background: rgb(100, 99, 99);
+            padding: 40px;
+            text-align: center;
+        }
+
+        img{
+            width: 300px;
+            height: 200px;
+        }
+
+        .card{
+            background: beige;
+            width: 25%;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+
+        button{
+            padding: 20px;
+            background: transparent;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        /* 
+
+        positions :- it controls the placing of an a element
+        static 
+        fixed
+        sticky
+        relative
+        absolute
+
+        */
+        .icons{
+            position: fixed;
+            top: 40%;
+            right: 5%;
+        }
+
+        header{
+            padding: 20px;
+            text-align: right;
+            position: sticky;
+            top: 0;
+            background: rgb(157, 76, 76);
+        }
+
+        a{
+            color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+      <div>
+        lorem ipsum <span>dollor</span> sit amet
+      </div>
+      <div>
+        lorem ipsum dolor sit amet
+      </div>   -->
+
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">services</a>
+        </nav>
+    </header>
+
+    <div class="parent">
+        <div class="card">
+            <div><img
+                    src="https://bucket-neosite.s3.ap-south-1.amazonaws.com/b900fb30-7621-4cea-926a-b5ad5d6ea5ef/website/service/full-stack-python-development-in-nashik.jpg"
+                    alt=""></div>
+            <h1>Python Full Stack</h1>
+            <p>Become a python full stack devloper</p>
+            <p>50,000</p>
+            <button>view details</button>
+        </div>
+
+        <div class="card">
+            <div><img src="https://nareshit.in/wp-content/uploads/2025/11/full-stack-java-roadmap-image.png" alt="">
+            </div>
+            <h1>Java Full Stack</h1>
+            <p>Become a java full stack devloper</p>
+            <p>60,000</p>
+            <button>view details</button>
+        </div>
+
+        <div class="card">
+            <div><img src="https://miro.medium.com/v2/resize:fit:1356/1*OUA5w44w-XKomWGAb4Uz1A.png" alt=""></div>
+            <h1>MERN Stack</h1>
+            <p>Become a mern stack devloper</p>
+            <p>40,000</p>
+            <button>view details</button>
+        </div>
+
+    </div>
+
+    <div class="icons">
+        <i class="fa-brands fa-square-whatsapp"></i><br>
+        <i class="fa-brands fa-square-linkedin"></i><br>
+        <i class="fa-brands fa-github"></i><br>
+        <i class="fa-brands fa-facebook"></i>
+    </div>
+    <h1>\Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae distinctio debitis quam at incidunt quod magni, voluptate officiis sapiente, eius libero molestias reiciendis? Sit iusto repellat cum tempora, repudiandae maiores?</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mollitia ipsam quae tempore animi fugiat similique pariatur eligendi eveniet eaque error ex, illum nesciunt! Neque ut nobis illum iure mollitia!</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sit, est a porro, magni laborum numquam repudiandae veniam doloremque aliquid neque praesentium? Totam beatae perferendis, velit aperiam recusandae inventore temporibus.</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium excepturi, reprehenderit odit quia et laboriosam eveniet voluptatem architecto perspiciatis tenetur consequatur sapiente libero illo nemo expedita alias quaerat corrupti.</h1>
+</body>
+
+</html>
