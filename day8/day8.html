@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+          absolute units - fixed units
+          cm
+          mm
+          inch
+          px
+
+          relative units
+           1)percentages - it will always depends on parent
+             width,margin,padding
+           2)viewport
+             it will always depends on viewport screen
+             width:100vw;
+             height:100vh;
+           3)rem - fontsizes
+            1rem
+            2rem
+            default - 16px
+             1 rem = 1*16
+             2 rem = 2*16
+
+          flexbox
+          it is a one dimensional layout model that is used to create simple layouts
+          flex container (parent properties)
+          1)display flex
+          2)flex-direction
+          3)gap - it creates the space between the rows and columns
+          4)justify content
+            it control the alignment of child items on the main axis
+            justify-content: center;
+            justify-content: end;
+            justify-content: start;
+            justify-content: space-evenly;
+            justify-content: space-between;
+            justify-content: space-around;
+          5)align-items - it controls the alignment of child items 
+            align-items: stretch;
+            align-items: start;
+            align-items: end;
+            align-items: center;
+          6)flex-wrap
+            
+          flex items (child properties)
+          flex - basis
+          it controls the intial length of an item  
+          .child{
+            flex-basis:25%;
+          }
+        */
+
+        .parent {
+            background: rgb(224, 208, 163);
+            display: flex;
+            gap: 20px;
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: end;
+            justify-content: start;
+            justify-content: space-evenly;
+            justify-content: space-between;
+            justify-content: space-around;
+            height: 100vh;
+            align-items: stretch;
+            align-items: start;
+            align-items: end;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+            align-content: center;
+            align-content: end;
+            align-content: start;
+            align-content: space-between;
+            align-content: space-around;
+            align-content: space-evenly;
+            flex-flow: wrap row-reverse;
+
+        }
+
+        .child {
+            background: plum;
+            padding: 20px;
+            flex-basis: 25%;
+        }
+
+        header {
+            background: lightblue;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        section{
+            height: 100vh;
+            background: lightcyan;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>company name</h1>
+        <nav>
+            <button>home</button>
+            <button>about</button>
+            <button>services</button>
+        </nav>
+    </header>
+
+    <section>
+        <div>
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sittias nulla dolorem? Id, vitae.</p>
+        </div>
+    </section>
+
+    <div class="parent">
+        <div class="child">Html</div>
+        <div class="child">Css</div>
+        <div class="child">Js</div>
+        <div class="child">React</div>
+        <div class="child">Python</div>
+        <div class="child">Css</div>
+        <div class="child">Js</div>
+        <div class="child">React</div>
+        <div class="child">Data </div>
+        <div class="child">Css</div>
+        <div class="child">Js</div>
+        <div class="child">React</div>
+        <div class="child">Html</div>
+        <div class="child">Css</div>
+        <div class="child">Js</div>
+        <div class="child">React</div>
+        <div class="child">Python</div>
+        <div class="child">Css</div>
+        <div class="child">Js</div>
+        <div class="child">React</div>
+        <div class="child">Data </div>
+        <div class="child">Css</div>
+        <div class="child">Js</div>
+        <div class="child">React</div>
+    </div>
+</body>
+
+</html>
