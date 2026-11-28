@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AquaPure Steel Bottle | HTML Formatting Tags Demo</title>
+  <style>
+    :root {
+      --ink: #14232e;
+      --muted: #5b6b77;
+      --line: #d5dee5;
+      --page: #eef3f6;
+      --card: #ffffff;
+      --accent: #0f6e8c;
+      --sale: #b3261e;
+      --tag-bg: #e0f1f6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      background: var(--page);
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+    .toolbar {
+      max-width: 520px;
+      margin: 0 auto 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .toolbar button {
+      font: inherit;
+      padding: 6px 14px;
+      border: 1px solid var(--accent);
+      background: transparent;
+      color: var(--accent);
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .toolbar button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+    .product {
+      max-width: 520px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px;
+    }
+    .product h1 { margin: 6px 0 4px; font-size: 28px; line-height: 1.2; }
+    .badge { color: var(--sale); font-size: 14px; }
+    .tagline { color: var(--muted); margin: 0 0 14px; }
+    .price { font-size: 24px; margin: 0 0 10px; }
+    .price del { color: var(--muted); font-size: 18px; }
+    .price ins { text-decoration: none; font-weight: 600; }
+    mark { background: #fff1b8; color: var(--ink); padding: 1px 6px; border-radius: 3px; }
+    p { margin: 0 0 12px; }
+    code {
+      font-family: Consolas, "Courier New", monospace;
+      background: var(--page);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    abbr { text-decoration: underline dotted; cursor: help; }
+    blockquote {
+      margin: 18px 0;
+      padding: 4px 16px;
+      border-left: 3px solid var(--accent);
+      color: var(--muted);
+    }
+    blockquote cite { display: block; font-size: 13px; margin-top: 4px; }
+    ul { padding-left: 20px; margin: 0 0 16px; }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 18px 0; }
+    small { color: var(--muted); font-size: 12px; }
+    .buy {
+      width: 100%;
+      font: inherit;
+      font-weight: 600;
+      padding: 12px;
+      border: 0;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      cursor: pointer;
+    }
+    .buy:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+    .tg {
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 11px;
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      background: var(--tag-bg);
+      color: var(--accent);
+      padding: 1px 6px;
+      border-radius: 4px;
+      margin-left: 6px;
+      white-space: nowrap;
+    }
+    .hide-tags .tg { display: none; }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <span>Tag labels</span>
+    <button id="toggle" type="button" aria-pressed="true">Hide tags</button>
+  </div>
+
+  <main class="product" id="product">
+
+    <!-- <strong>: important text, bold by default -->
+    <strong class="badge">Bestseller</strong><span class="tg">&lt;strong&gt;</span>
+
+    <!-- <h1>: main page heading (one per page) -->
+    <h1>AquaPure steel bottle<span class="tg">&lt;h1&gt;</span></h1>
+
+    <!-- <em>: stressed emphasis, italic by default -->
+    <p class="tagline"><em>Keeps your drink cold for 24 hours</em><span class="tg">&lt;em&gt;</span></p>
+
+    <!-- <del> old price, <ins> new price -->
+    <p class="price">
+      <del>$129</del><span class="tg">&lt;del&gt;</span>
+      <ins>$89</ins><span class="tg">&lt;ins&gt;</span>
+    </p>
+
+    <!-- <mark>: highlighted, relevant text -->
+    <p><mark>Free shipping today</mark><span class="tg">&lt;mark&gt;</span></p>
+
+    <!-- <sub> lowers text, <sup> raises text -->
+    <p>
+      Holds 1 L of H<sub>2</sub>O<span class="tg">&lt;sub&gt;</span>
+      and saves 30%<sup>*</sup><span class="tg">&lt;sup&gt;</span>
+    </p>
+
+    <!-- <code>: computer code or codes, monospace -->
+    <p>Use coupon <code>SAVE30</code><span class="tg">&lt;code&gt;</span> at checkout.</p>
+
+    <!-- <abbr> explains an abbreviation, <time> gives a machine-readable date -->
+    <p>
+      <abbr title="Stock keeping unit">SKU</abbr><span class="tg">&lt;abbr&gt;</span>: AQ-1042 &middot;
+      Offer ends <time datetime="2026-11-30">30 Nov 2026</time><span class="tg">&lt;time&gt;</span>
+    </p>
+
+    <hr>
+
+    <!-- <blockquote>: quoted block, <cite> names the source -->
+    <blockquote>
+      Best bottle I've owned. No leaks at all.<span class="tg">&lt;blockquote&gt;</span>
+      <cite>Priya S., verified buyer</cite>
+    </blockquote>
+
+    <!-- <ul> unordered list, <li> list item -->
+    <ul>
+      <li>Leak-proof lid</li>
+      <li>BPA-free steel</li>
+      <li>Fits car cup holders<span class="tg">&lt;ul&gt; &lt;li&gt;</span></li>
+    </ul>
+
+    <button class="buy" type="button">Add to cart</button>
+
+    <!-- <small>: fine print and side comments -->
+    <p style="margin-top:14px"><small>*Offer valid on first orders only. Terms apply.</small><span class="tg">&lt;small&gt;</span></p>
+
+  </main>
+
+  <script>
+    var btn = document.getElementById('toggle');
+    var box = document.getElementById('product');
+    btn.addEventListener('click', function () {
+      var hidden = box.classList.toggle('hide-tags');
+      btn.textContent = hidden ? 'Show tags' : 'Hide tags';
+      btn.setAttribute('aria-pressed', String(!hidden));
+    });
+  </script>
+</body>
+</html>
